@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <head>
+        <h1 id="title">MovieMaking Survey Form</h1>
+        <p id="description">Thank for taking the time to help us improve the platform</p>
+    </head>
+
+    <main>
+        <form id="survey-form">
+            <!-- User Personal Information Section-->
+            <fieldset id="personal-info">
+                <h3>Personal Information</h3>
+                <label id="name-label" for="name">Enter your name:</label>
+                <input id="name" type="text" name="name" placeholder="Enter your name" required/>
+
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="Enter your email addres" required/>
+                
+                <label id="number-label" for="number">Age:</label>
+                <input id="number" type="number" name="age" placeholder="Enter your age" min="16" max="70" required/>
+                
+                <label for="dropdown">Your Role In The Film Making Industry</label>
+                <select id="dropdown">
+                    <option disabled>--select--</option>
+                    <option>Operator</option>
+                    <option>Producer</option>
+                    <option>Screenwriter</option>
+                </select>
+            </fieldset>
+
+            <!-- Recomendation Section -->
+            <fieldset id="recomendation">
+                <h3>Would You Reccomend us ?</h3>
+                 <label><input class="inline" type="radio" name="reccomend" value="definetly" /> Definetly</label>
+                 <label><input class="inline" type="radio" name="reccomend" value="maybe" /> Maybe</label>
+                 <label><input class="inline" type="radio" name="reccomend" value="not-sure" /> Not Sure</label>
+
+            </fieldset>
+
+            <!-- What needs to be improved section -->
+            <fieldset id="improvement">
+                <h3>What would you like to see improved ?</h3>
+                 <label><input type="checkbox" name="improvement" value="team" /> The teams</label>
+                 <label><input type="checkbox" name="improvement" value="team-avail" /> The teams availability</label>
+                 <label><input type="checkbox" name="improvement" value="team-var" /> The teams variety</label>
+                 <label><input type="checkbox" name="improvement" value="tech" /> The tech</label>
+                 <label><input type="checkbox" name="improvement" value="tech-avil" /> The tech availability</label>
+                 <label><input type="checkbox" name="improvement" value="tech-var" /> The tech variety</label>
+                 <label><input type="checkbox" name="improvement" value="platform" /> The platform</label>
+            </fieldset>
+            
+            <!-- comments and suggestions section -->
+            <fieldset>
+                <h3>Comments and suggestions</h3>
+                <textarea></textarea>
+            </fieldset>
+
+            <input id="submit" type="submit" value="Submit"/>
+        </form>
+    </main>
+    
+    <footer>
+
+    </footer>
+</body>
+</html>
